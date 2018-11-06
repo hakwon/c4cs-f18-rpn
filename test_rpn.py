@@ -18,3 +18,5 @@ class TestBasics(unittest.TestCase):
     def test_exponential(self):
     	result = rpn.calculate("2 4 ^")
     	self.assertEqual(16, result)
+    	result = rpn.calculate("2 1 ^")
+    	self.assertEqual(2, result)
