@@ -3,5 +3,6 @@ python:
   - "3.5"
 script: 
   - python3 -m unittest
+  - pip install coverage
   - coverage run test_rpn.py -m unittest
   - coverage report
